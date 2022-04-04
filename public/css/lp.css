@@ -1,0 +1,284 @@
+/* Style GLobal */
+.rectangle {
+  display: block;
+  background-color: #0d28a6;
+  width: 100px;
+  height: 35px;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-green {
+  color: #ffffff;
+  background-color: #5cb85f;
+}
+
+.btn-green:hover {
+  color: #ffffff;
+  background-color: #7cc67e;
+}
+
+.content-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.content-subtitle {
+  margin-top: 25px;
+}
+
+.card {
+  border-radius: 10px;
+  border: none;
+}
+
+/* Style Service */
+.service {
+  padding-top: 100px;
+}
+
+.service-img {
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.service-items {
+  padding: 0;
+}
+
+.service-item {
+  position: relative;
+  line-height: 30px;
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+.service-item__icon {
+  transform: scale(0.6);
+  position: absolute;
+  left: -40px;
+  top: -10px;
+}
+
+.service-item__text {
+  margin-left: 15px;
+}
+
+/* Style Why Us */
+.why-us {
+  padding-top: 100px;
+}
+
+.why-us .content-title,
+.why-us .content-subtitle {
+  text-align: center;
+}
+
+.why-us .card {
+  border: 0.5px solid rgb(194, 194, 194);
+}
+
+.why-us .card .card-body .card-icon {
+  width: 32px;
+}
+
+.why-us__box:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+/* Style Testimonial */
+.testimoni {
+  padding-top: 100px;
+  padding-left: 15px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
+.testimoni-item {
+  text-align: center;
+}
+
+.testimoni .card {
+  background-color: #f1f3ff;
+}
+
+.testimoni-profile {
+  width: 80px;
+}
+
+.testimoni-rate {
+  width: 80px;
+}
+
+.testimoni-content,
+.testimoni-identity {
+  text-align: left;
+}
+
+.testimoni-content {
+  margin-top: 25px;
+}
+
+.testimoni-identity {
+  font-weight: bold;
+}
+
+.carousel-item .card {
+  margin-right: 10px;
+}
+
+.carousel-item .card:first-child,
+.carousel-item .card:last-child {
+  display: none;
+}
+
+.carousel-control {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel-control__prev,
+.carousel-control__next {
+  background-color: transparent;
+  color: #000000;
+  position: relative;
+  display: inline-block;
+  margin-right: 25px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #c4c4c4;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+.carousel-control__prev:hover,
+.carousel-control__next:hover {
+  color: #ffffff;
+  border: none;
+  background-color: #5cb85f;
+}
+
+/* Style CTA Banner */
+.cta-banner {
+  padding-top: 100px;
+}
+
+.cta-banner .card {
+  background-color: #0d28a6;
+  padding: 50px;
+}
+
+.cta-banner__title {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.cta-banner__subtitle {
+  color: #ffffff;
+}
+
+/* Style FAQ */
+.faq {
+  padding-top: 100px;
+}
+
+/* Medium device (tablet, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* Style Service */
+  .service-img {
+    margin-bottom: 0;
+  }
+
+  /* Style Why Us */
+  .why-us .content-title,
+  .why-us .content-subtitle {
+    text-align: left;
+  }
+
+  /* Style Testimoni */
+  .testimoni-content {
+    margin-top: 10px;
+  }
+
+  .carousel {
+    overflow: hidden;
+  }
+
+  .carousel-inner {
+    width: 150%;
+  }
+
+  .carousel-item-next:not(.carousel-item-start),
+  .carousel-item-end.active {
+    transform: translate3d(33%, 0, 0);
+  }
+
+  .carousel-item-prev:not(.carousel-item-end),
+  .carousel-item-start.active {
+    transform: translate3d(-33%, 0, 0);
+  }
+
+  .carousel-item .card {
+    display: flex !important;
+    float: left;
+    margin-right: 10px;
+    width: calc(33% - 10px);
+  }
+}
+
+/* Large device (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* Style Service */
+  .service-img {
+    margin-bottom: 0;
+  }
+
+  /* Style Why Us */
+  .why-us .content-title,
+  .why-us .content-subtitle {
+    text-align: left;
+  }
+
+  /* Style  Testimonial */
+  .testimoni {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .testimoni-item {
+    text-align: left;
+  }
+
+  .testimoni-content {
+    margin-top: 10px;
+  }
+
+  .carousel {
+    overflow: hidden;
+  }
+
+  .carousel-inner {
+    width: 150%;
+    left: -25%;
+  }
+
+  .carousel-item-next:not(.carousel-item-start),
+  .carousel-item-end.active {
+    transform: translate3d(33%, 0, 0);
+  }
+
+  .carousel-item-prev:not(.carousel-item-end),
+  .carousel-item-start.active {
+    transform: translate3d(-33%, 0, 0);
+  }
+
+  .carousel-item .card {
+    display: flex !important;
+    float: left;
+    margin-right: 10px;
+    width: calc(33% - 10px);
+  }
+}

@@ -1,0 +1,138 @@
+/* Global Style */
+.rectangle {
+    display: block;
+    background-color: #0d28a6;
+    width: 100px;
+    height: 35px;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn-green {
+    color: #ffffff;
+    background-color: #5cb85f;
+}
+
+.btn-green:hover {
+    color: #ffffff;
+    background-color: #7cc67e;
+}
+
+.card {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Style Navbar */
+.navbar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f3ff;
+}
+
+.navbar-nav__mobile {
+    display: flex;
+}
+
+.navbar-nav__desktop {
+    display: none;
+}
+
+.nav-link {
+    color: #000000 !important;
+    margin-right: 30px;
+}
+
+.nav-link:hover {
+    color: #303030 !important;
+}
+
+.nav-btn {
+    width: 50%;
+    margin-top: 15px;
+}
+
+/* Style Hero */
+.hero {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background-color: #f1f3ff;
+    height: 650px;
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    margin-top: 20px;
+}
+
+.hero-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    width: 96%;
+}
+
+/* Style Footer */
+.footer {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-img {
+    width: 32px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+/* Medium device (tablet, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Style Hero */
+    .hero {
+        height: auto;
+    }
+
+    .hero-img {
+        width: 50%;
+    }
+}
+
+/* Large device (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Style Navbar */
+    .navbar-nav__desktop {
+        display: flex;
+    }
+
+    .navbar-nav__mobile {
+        display: none;
+    }
+
+    /* Style Hero */
+    .hero {
+        padding-top: 150px;
+        height: auto;
+    }
+}
+
+/* Extra large device (desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Style Hero */
+    .hero {
+        padding-top: 18%;
+        height: auto;
+    }
+}

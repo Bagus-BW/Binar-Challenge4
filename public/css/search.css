@@ -1,0 +1,111 @@
+/* Style Floating-Form */
+.floating-form{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -380px;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-field{
+    width: 100%;
+}
+
+.form-field .form-control,
+.form-field .form-select{
+    color: #8A8A8A;
+}
+
+.form-field.form-label,
+.form-field .form-label{
+    font-size: .9em;
+    color: #3C3C3C;
+}
+
+.form-field__button{
+    margin-top: 30px;
+    align-self: center;
+}
+
+/* Style Result Car */
+.result-car{
+    margin-top: 400px;
+}
+
+.car-title{
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.car-price{
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+.car-subtitle{
+    font-size: .9em;
+}
+
+.detail-item:not(:last-child){
+    margin-bottom: 10px;
+}
+
+/* Medium device (tablet, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Style Floating Form */
+    .floating-form{
+        margin: 0 50px;
+        bottom: -240px;
+    }
+
+    .form-field{
+        width: auto;
+    }
+
+    .form-field .form-control,
+    .form-field .form-select{
+        width: 300px;
+    }
+
+    .form-field__button{
+        display: block;
+        width: 100%;
+    }
+
+    .form-field__button .btn{
+        width: 100%;
+    }
+
+    /* Style Result Car */
+    .result-car{
+        margin: 250px 50px 0px 50px;
+    }
+}
+
+/* Large device (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Style Floating Form */
+    .floating-form{
+        margin: 0 150px;
+        bottom: -80px;
+    }
+
+    .form-field{
+        width: auto;
+    }
+
+    .form-field .form-control,
+    .form-field .form-select{
+        width: 200px;
+    }
+
+    /* Style Result Car */
+    .result-car{
+        margin: 100px 150px 0px 150px;
+    }
+}
